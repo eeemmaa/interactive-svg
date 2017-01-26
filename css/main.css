@@ -1,8 +1,8 @@
-#left-ear {
-  transform: translateY(0deg);
+#left-ear, #right-ear {
+  transform: translateY(0px);
+  transition: all .5s linear;
 }
 
-#left-ear:hover {
-  transform: translateY(10deg);
-  transition: all 1s linear;
+svg:hover #left-ear, svg:hover #right-ear {
+  transform: translateY(-10px);
 }
