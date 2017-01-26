@@ -1,8 +1,31 @@
 #left-ear, #right-ear {
-  transform: translateY(0px);
+  transform: translateY(0);
   transition: all .5s linear;
 }
 
 svg:hover #left-ear, svg:hover #right-ear {
   transform: translateY(-10px);
+}
+
+.eyes {
+  transform: translateX(0);
+  animation: horizontalmove 3s linear infinite;
+}
+
+@keyframes horizontalmove {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
